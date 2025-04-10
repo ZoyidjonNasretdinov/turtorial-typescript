@@ -23,3 +23,23 @@ function getName(firstName : string, lastName: string): void {
 }
 
 getName("John", "Doe"); // This is a string
+
+
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 30,
+    isEmployed: true,
+    salary: 50000,
+    bonus: 5000,
+    totalSalary: function() {
+
+        return this.salary + this.bonus;
+    }
+}
+
+function getFullName (person: { firstName: string, lastName: string }): string {
+    return `${person.firstName} ${person.lastName}`;
+}
+
+console.log(getFullName(person)); // This is a string

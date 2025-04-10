@@ -14,3 +14,18 @@ function getName(firstName, lastName) {
     console.log(`Hello ${firstName} ${lastName}`);
 }
 getName("John", "Doe"); // This is a string
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 30,
+    isEmployed: true,
+    salary: 50000,
+    bonus: 5000,
+    totalSalary: function () {
+        return this.salary + this.bonus;
+    }
+};
+function getFullName(person) {
+    return `${person.firstName} ${person.lastName}`;
+}
+console.log(getFullName(person)); // This is a string
