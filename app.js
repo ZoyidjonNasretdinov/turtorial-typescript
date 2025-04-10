@@ -5,5 +5,12 @@ let isEmployed = true; // This is a boolean
 const salary = 50000; // This is a constant number
 const bonus = 5000; // This is a constant number
 const totalSalary = salary + bonus; // This is a constant number
-
 console.log(totalSalary); // This is a string
+function loading() {
+    console.log("Loading...");
+}
+loading(); // This is a string
+function getName(firstName, lastName) {
+    console.log(`Hello ${firstName} ${lastName}`);
+}
+getName("John", "Doe"); // This is a string
