@@ -43,3 +43,26 @@ function getFullName (person: { firstName: string, lastName: string }): string {
 }
 
 console.log(getFullName(person)); // This is a string
+
+
+
+// array type
+
+const cars : string[] = ["BMW", "Mercedes", "Audi"];
+const number : number[] = [1, 2, 3, 4, 5];
+const bools : boolean[] = [true, false, true, false];
+
+const upperCaseCars = cars
+  .filter((car: string) => car.startsWith("B"))
+  .map((car: string) => car.toUpperCase());
+
+console.log(upperCaseCars); // This is a string
+
+
+
+const result = number.map((num: number) => num * 2);
+
+
+// union type
+
+const unionType: (string | number)[] = [1, 'hello']; // This is a union type array

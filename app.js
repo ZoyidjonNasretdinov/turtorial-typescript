@@ -25,8 +25,15 @@ const person = {
         return this.salary + this.bonus;
     }
 };
-
 function getFullName(person) {
     return `${person.firstName} ${person.lastName}`;
 }
 console.log(getFullName(person)); // This is a string
+// array type
+const cars = ["BMW", "Mercedes", "Audi"];
+const number = [1, 2, 3, 4, 5];
+const bools = [true, false, true, false];
+const upperCaseCars = cars
+    .filter((car) => car.startsWith("B"))
+    .map((car) => car.toUpperCase());
+console.log(upperCaseCars); // This is a string
