@@ -90,3 +90,18 @@ const color2: Color = Color.Green; // This is an enum type
 const color3: Color = Color.Blue; // This is an enum type
 const color4: Color = Color.Red; // This is an enum type
 const color5: Color = Color.Green; // This is an enum type
+
+
+// readonly property
+
+let admins: readonly string[] = ["John", "Jane", "Doe"]; // This is a readonly property
+// admins.push("Smith"); // This will give an error
+// admins[0] = "Smith"; // This will give an error
+// admins.pop(); // This will give an error
+// admins.shift(); // This will give an error
+// admins.unshift("Smith"); // This will give an error
+// admins.splice(0, 1); // This will give an error
+// admins.sort(); // This will give an error
+// admins.reverse(); // This will give an error
+// admins.fill("Smith"); // This will give an error
+const admin: Readonly<{ name: string, age: number }> = { name: "John", age: 30 }; // This is a readonly property

@@ -37,3 +37,37 @@ const upperCaseCars = cars
     .filter((car) => car.startsWith("B"))
     .map((car) => car.toUpperCase());
 console.log(upperCaseCars); // This is a string
+const result = number.map((num) => num * 2);
+// union type
+const unionType = [1, 'hello']; // This is a union type array
+// tuple type
+const tuple = ['John', 30]; // This is a tuple type
+const tupleArray = [
+    ['John', 30],
+    ['Jane', 25],
+    ['Doe', 40]
+];
+// enum type
+var Color;
+(function (Color) {
+    Color["Red"] = "RED";
+    Color["Green"] = "GREEN";
+    Color["Blue"] = "BLUE";
+})(Color || (Color = {}));
+const color = Color.Red; // This is an enum type
+const color2 = Color.Green; // This is an enum type
+const color3 = Color.Blue; // This is an enum type
+const color4 = Color.Red; // This is an enum type
+const color5 = Color.Green; // This is an enum type
+// readonly property
+let admins = ["John", "Jane", "Doe"]; // This is a readonly property
+// admins.push("Smith"); // This will give an error
+// admins[0] = "Smith"; // This will give an error
+// admins.pop(); // This will give an error
+// admins.shift(); // This will give an error
+// admins.unshift("Smith"); // This will give an error
+// admins.splice(0, 1); // This will give an error
+// admins.sort(); // This will give an error
+// admins.reverse(); // This will give an error
+// admins.fill("Smith"); // This will give an error
+const admin = { name: "John", age: 30 }; // This is a readonly property
