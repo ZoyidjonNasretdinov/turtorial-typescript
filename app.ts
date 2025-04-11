@@ -66,3 +66,27 @@ const result = number.map((num: number) => num * 2);
 // union type
 
 const unionType: (string | number)[] = [1, 'hello']; // This is a union type array
+
+
+
+// tuple type
+const tuple: [string, number] = ['John', 30]; // This is a tuple type
+const tupleArray: [string, number][] = [
+    ['John', 30],
+    ['Jane', 25],
+    ['Doe', 40]
+
+
+];
+
+// enum type
+enum Color {
+    Red = "RED",
+    Green = "GREEN",
+    Blue = "BLUE"
+}
+const color: Color = Color.Red; // This is an enum type
+const color2: Color = Color.Green; // This is an enum type
+const color3: Color = Color.Blue; // This is an enum type
+const color4: Color = Color.Red; // This is an enum type
+const color5: Color = Color.Green; // This is an enum type
