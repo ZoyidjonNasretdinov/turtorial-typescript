@@ -25,6 +25,7 @@ const person = {
         return this.salary + this.bonus;
     }
 };
+
 function getFullName(person) {
     return `${person.firstName} ${person.lastName}`;
 }
