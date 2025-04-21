@@ -104,3 +104,20 @@ let worker: CustomWorkerType = {
 
 }
 // type assertion
+
+
+//interface
+
+interface PersonInterface {
+    name: string;
+    age: number;
+    email: string;
+    address: {
+        street: string;
+        city: string;
+        state: string;
+        zip: string;
+    };
+}
+
+    
