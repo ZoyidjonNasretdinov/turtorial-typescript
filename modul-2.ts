@@ -27,3 +27,80 @@ function getStatus(status: requestStatus): {
             throw new Error('Invalid status');
     }
 }
+
+// type alias
+type User = {
+    id: number;
+    name: string;
+    email: string;
+    age: number;        
+    isActive: boolean;
+    createdAt: Date;
+    updatedAt: Date;
+    lastLogin: Date | null;
+    address: {
+        street: string;
+        city: string;
+        state: string;
+        zip: string;
+    };
+    phoneNumbers: string[];
+    isAdmin: boolean;
+    roles: string[];
+    permissions: string[];
+    profilePicture: string | null;
+    bio: string | null;
+    website: string | null;
+    socialMedia: {
+        facebook: string | null;
+        twitter: string | null;
+        instagram: string | null;
+     }
+    };
+
+
+
+// type assertion
+
+type Person = {
+    name: string;
+    age: number;
+    email: string;
+    address: {
+        street: string;
+        city: string;
+        state: string;
+        zip: string;
+    };
+}
+
+type Employee = {
+    id: number;
+    position: string;
+    salary: number;
+    hireDate: Date;
+    department: string;
+    isActive: boolean;
+}
+
+type CustomWorkerType = Person & Employee;
+
+let worker: CustomWorkerType = {
+    name: 'John Doe',
+    age: 30,
+    email: '',
+    address: {
+        street: '123 Main St',
+        city: 'New York',
+        state: 'NY',
+        zip: '10001'
+    },
+    id: 1,
+    position: 'Software Engineer',
+    salary: 100000,
+    hireDate: new Date('2020-01-01'),
+    department: 'Engineering',
+    isActive: true
+
+}
+// type assertion
