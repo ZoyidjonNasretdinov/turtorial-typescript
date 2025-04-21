@@ -105,3 +105,16 @@ let admins: readonly string[] = ["John", "Jane", "Doe"]; // This is a readonly p
 // admins.reverse(); // This will give an error
 // admins.fill("Smith"); // This will give an error
 const admin: Readonly<{ name: string, age: number }> = { name: "John", age: 30 }; // This is a readonly property
+
+
+enum Direction {
+    Up = "UP",
+    Down = "DOWN",
+    Left = "LEFT",
+    Right = "RIGHT"
+}
+
+const direction: Direction = Direction.Up; // This is an enum type
+const direction2: Direction = Direction.Down; // This is an enum type
+const direction3: Direction = Direction.Left; // This is an enum type
+const direction4: Direction = Direction.Right; // This is an enum type

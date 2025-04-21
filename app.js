@@ -71,3 +71,14 @@ let admins = ["John", "Jane", "Doe"]; // This is a readonly property
 // admins.reverse(); // This will give an error
 // admins.fill("Smith"); // This will give an error
 const admin = { name: "John", age: 30 }; // This is a readonly property
+var Direction;
+(function (Direction) {
+    Direction["Up"] = "UP";
+    Direction["Down"] = "DOWN";
+    Direction["Left"] = "LEFT";
+    Direction["Right"] = "RIGHT";
+})(Direction || (Direction = {}));
+const direction = Direction.Up; // This is an enum type
+const direction2 = Direction.Down; // This is an enum type
+const direction3 = Direction.Left; // This is an enum type
+const direction4 = Direction.Right; // This is an enum type
